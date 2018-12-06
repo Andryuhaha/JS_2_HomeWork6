@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h4>Задание 1</h4>
+	<h4>В форму обратной связи добавить следующие поля:</h4>
+	<h5>- поле даты рождения;</h5>
+	<h5>- ошибочные поля подсветить с помощью какого-нибудь эффекта, например, Bounce.</h5>
+	<h5>- все возвращаемые ошибки выводить с помощью виджета Dialog.</h5>
+
+	<form action="#" class="contacts">
+		<div class="input_fields">
+			<label for="name">Имя: </label>
+			<input id="name" type="text" placeholder="Ваше имя" required>
+			<br>
+			<div>
+				<label for="date">Дата рождения: </label>
+				<input id="date" type="text" placeholder="01.01.2019" required>
+			</div>
+			<label for="tel">Номер телефона: </label>
+			<input id="tel" type="tel" placeholder="+7(900)555-7799" required>
+			<br>
+			<label for="mail">E-mail: </label>
+			<input id="mail" type="email" placeholder="example@mail.ru" required>
+			<br>
+			<label for="text">Сообщение: </label>
+			<input id="text" type="text" placeholder="Ваше сообщение">
+			<br>
+			<div id="city_input_form">
+				<label for="city_input" class="acc__label">Город: </label>
+				<input type="text" id="city_input" placeholder="Введите город" required>
+			</div>
+		</div><br>
+		<div class="btnGroup">
+			<input type="submit" value="Отправить">
+			<input type="reset" value="Сбросить">
+		</div>
+
+	</form>
+	<hr>
+
+	<h4>Задание 2</h4>
+	<h5>Создать карусель популярных товаров в шапке.</h5>
+	<h5>c помощью jQuery UI добавить возможность перемещать товар прямо в корзину мышью;</h5>
+
+	<div class="cart_block">
+		<div class="cart"></div>
+		<div class="cart_info">
+			<span>Сумма:</span>
+			<span class="total_sum">0</span>
+			<br>
+			<span>Количество:</span>
+			<span class="total_items">0</span>
+		</div>
+	</div>
+	<div class="carousel_block"></div><br><br><br><br><br>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="main.js"></script>
+	<script src="carusel.js"></script>
+</body>
+
+</html>
